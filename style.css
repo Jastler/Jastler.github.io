@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  border: 1px solid red;
 }
 .wrapper {
   display: flex;
@@ -17,7 +18,7 @@ h1{
   font-size: 55px;
 }
 h2{
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 600;
 }
 h3 {
@@ -47,7 +48,7 @@ h3 {
   font-weight: 700;
 }  
 header {
-  height: 100vh;
+  height: 900px;
   background: url(/img/background-home.png) no-repeat center;
   background-size: cover;
   position: relative;
@@ -254,12 +255,15 @@ header {
     font-weight: 700;
     font-size: 45px;
   }
+  header {
+    height: 800px;
+  }
   .home{
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 100px;
     width: 100%;
   }
   .header-img {
@@ -283,27 +287,42 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .main-info-items {
   display: flex;
   align-items: center;
   width: 100%;
+  margin-top: 15px;
 }
 .main-info-img {
   width: 90%;
   height: auto;
 }
 .main-info-text {
-  font-size: 18px;
+  line-height: 1.4em;
+  font-size: 22px;
+
+}
+@media all and (max-width: 1100px){
+  .main-info-items{
+    flex-direction: column;
+  }
+  .main-info-img {
+    width: auto;
+    height: 300px;
+  }
 }
 .info-page{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 800px;
+  margin-bottom: 40px;
 }
 .info-title{
+  margin-top: 25px;
   text-align: center;
   max-width: 750px;
 }
@@ -318,6 +337,17 @@ header {
   color: gray;
   line-height: 1.6em;
 }
+@media all and (max-width: 900px){
+  h2{
+    font-size: 35px;
+  }
+  .info-title p:first-of-type {
+    font-size: 18px;
+  }
+  .info-title p:last-of-type {
+    font-size: 14px;
+  }
+}
 .info-cards{
   display: flex;
   flex-direction: column;
@@ -330,9 +360,8 @@ header {
   text-align: center;
 }
 .info-page-img {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  font-size: 55px;
+  color: #45311f;
 }
 
 .info-page-item p{
@@ -343,8 +372,25 @@ header {
   font-size: 20px;
   font-weight: 600;
 }
+pre{
+  font-size: 18px;
+}
+pre span {
+  display: block;
+  font-size: 25px;
+}
+@media all and (max-width: 700px){
+  pre{
+    font-size: 14px;
+  }
+  pre span {
+    display: block;
+    font-size: 20px;
+  }
+}
 .get-btn{
-  background-color: #1de9b6;
+  display: block;
+  background-color: #45311f;
   font-size: 18px;
   font-weight: 700;
   border: none;
