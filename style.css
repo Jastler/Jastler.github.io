@@ -480,7 +480,7 @@ input {
 }
 textarea::placeholder,input::placeholder {
   font-size: 18px;
-  color: #061e37;
+  color: #45311f;
   font-weight: 600;
 }
 textarea:focus::placeholder, input:focus::placeholder{
