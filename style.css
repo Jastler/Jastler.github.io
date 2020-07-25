@@ -493,7 +493,7 @@ textarea:focus::placeholder, input:focus::placeholder{
 textarea {
   width: 590px;
   height: 150px;
-  border: 2px solid #061e37;
+  border: 2px solid #45311f;
   margin: 15px 0 15px 0;
   padding: 10px 0 0 10px;
   border-radius: 5px;
@@ -530,7 +530,7 @@ textarea {
 }
 .contact-text a {
   text-decoration: none;
-  color: #10559c;
+  color: #45311f;
 }
 @media all and (max-width: 1300px) {
   .contact-us {
@@ -554,7 +554,7 @@ footer {
   align-items: center;
   height: 50px;
   color: white;
-  background-color: #061e37;
+  background-color: #45311f;
 }
 @media all and (max-width: 1450px) {
   .wrapper {
