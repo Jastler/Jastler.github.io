@@ -33,8 +33,7 @@
               <ul class="header-list">
                 <li><a class="header-link" href="#Home">Главная</a></li>
                 <li><a class="header-link" href="">О препарате</a></li>
-                <li><a class="header-link" href="">Extension</a></li>
-                <li><a class="header-link" href="">Pricing</a></li>
+                <li><a class="header-link" href="">Состав</a></li>
                 <li><a class="header-link" href="#contact-us">Связаться с нами</a></li>
                 <li class="btn-callback">
                   <a href="tel:+380981121261">Позвоните нам</a>
@@ -51,7 +50,7 @@
           <h1>Йодомидол</h1>
           <p>Универсальный ветеринарный препарат, не имеющий аналогов на современном фармацевтическом рынке. В основе – активный органический йод в сверхстабильной формуле. Обогащен комплексом микроэлементов: марганец, медь, железо, кобальт, цинк.</p>
           <div class="home-btn">
-            <a href="#contact-us" class="brown-btn btn" href="">Заказать</a>
+            <a href="#" class="modal_btn brown-btn btn">Заказать</a>
             <!-- <a class="white-btn btn" href="">Try for free</a> -->
           </div>
         </div>
@@ -241,6 +240,30 @@
     <footer>
       <p>&copy; 2020 Taras Chirkov<p>
     </footer>
+    <div class="popup" id="modal">
+      <div class="popup__overlay">
+        <div class="popup__body">
+          <a href="#" class="popup__close"><i class="fas fa-times-circle"></i></a>
+          <h4>Мы вам перезвоним!</h4>
+          <form
+              action="https://formspree.io/mdowynvj"
+              method="POST"
+              >
+          <div class="form-label">
+            <label>
+              <input type="tel" name="_phone" placeholder="Номер телефона">
+            </label>
+            <label>
+              <input type="text" name="_name" placeholder="Имя">
+            </label>
+          </div>
+          <div class="popup__button">
+            <button class="get-btn btn" type="submit">Отправить</button>
+          </div>
+          </form>
+        </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

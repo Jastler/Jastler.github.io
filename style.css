@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  border: 1px solid red;
 }
 .wrapper {
   display: flex;
@@ -484,7 +485,8 @@ textarea::placeholder,input::placeholder {
   font-weight: 600;
 }
 textarea:focus::placeholder, input:focus::placeholder{
-  opacity: 0; transition: opacity 0.3s ease;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
 }
 .form-label {
   display: flex;
@@ -504,17 +506,7 @@ textarea {
   flex-direction: column;
   align-items: center;
 }
-@media all and (max-width: 720px) {
-  textarea::placeholder,input::placeholder{
-    font-size: 14px;
-  }
-  textarea {
-    width: 300px;
-  }
-  input {
-    width: 130px
-  }
-}
+
 .contact-us {
   display: flex;
   justify-content: space-around;
@@ -535,7 +527,7 @@ textarea {
 @media all and (max-width: 1300px) {
   .contact-us {
     flex-direction: column;
-    height: 1300px;
+    height: 1150px;
   }
   .contact {
     flex-direction: row;
@@ -552,7 +544,7 @@ footer {
   justify-content: flex-end;
   flex-direction: column;
   align-items: center;
-  height: 50px;
+  height: 70px;
   color: white;
   background-color: #45311f;
 }
@@ -561,6 +553,80 @@ footer {
       width: 90%;
   }
 }
+.popup {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup__overlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup__body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 630px;
+  height: 200px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 10px;
+}
+.popup__body form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 170px;
+}
+.popup__close {
+  color: #000;
+  position: absolute;
+  right: 20px;
+  top:20px;
+}
+.popup.show{
+  visibility: visible;
+}
+@media all and (max-width: 720px) {
+  textarea::placeholder,input::placeholder{
+    font-size: 12px;
+  }
+  textarea {
+    width: 300px;
+  }
+  input {
+    width: 130px;
+    height: 40px
+  }
+  .popup__body{
+    width: 260px;
+    height: 120px;
+  }
+  .popup__button > .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  .popup__close {
+    font-size: 25px;
+    right: 0px;
+    top: 0px
+  }
+}
+
 
 
 
