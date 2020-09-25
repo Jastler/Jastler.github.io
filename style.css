@@ -525,6 +525,8 @@ textarea {
   font-size: 16px;
 }
 .contact-text a {
+  display: inline-block;
+  margin-top: 10px;
   text-decoration: none;
   color: #45311f;
 }
@@ -547,6 +549,7 @@ textarea {
   }
 }
 footer {
+  margin-top: 10px;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
